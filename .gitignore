@@ -1,0 +1,14 @@
+### Generated frontend files
+src/main/resources/static/
+
+### Gradle
+.gradle
+build/
+
+### JetBrains
+*.iml
+.idea/
+
+### Node
+node_modules/
+

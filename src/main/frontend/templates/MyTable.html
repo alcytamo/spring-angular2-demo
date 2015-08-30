@@ -1,0 +1,14 @@
+<div class="my-table">
+    <button (click)="addItem()">Click me</button>
+
+    <table style="width: 100%">
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+        </tr>
+        <tr *ng-for="var item of items">
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+        </tr>
+    </table>
+</div>

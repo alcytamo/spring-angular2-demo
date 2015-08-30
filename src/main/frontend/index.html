@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <base href="/" target="_blank">
+    <title>Spring Boot and Angular 2 demo</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+    <script src="/libs/traceur-runtime.js"></script>
+    <script src="/libs/system.js"></script>
+    <script src="/libs/angular2.dev.js"></script>
+    <script src="/libs/router.dev.js"></script>
+</head>
+<body>
+<h1>Demo project for Spring Boot and Angular 2</h1>
+<app></app>
+<script>
+    System.config({
+        baseURL: '/',
+        meta: {
+            rx: {format: 'cjs'}
+        },
+        map: {
+            rx: '/libs/rx.js'
+        }
+    });
+    System.import('app').catch(
+            console.error.bind(console)
+    );
+</script>
+</body>
+</html>
