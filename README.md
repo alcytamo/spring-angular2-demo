@@ -1,4 +1,4 @@
-#Demo project for Spring Boot and Angular 2
+#Demo project for Spring Boot and Angular2
 
 ---------------------------------
 
